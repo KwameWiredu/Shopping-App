@@ -14,6 +14,7 @@ import COLORS from '../assets/colour';
 import itemsData from '../assets/itemsData';
 import { FontAwesome5 } from '@expo/vector-icons';
 import { Ionicons } from '@expo/vector-icons';
+import { Fontisto } from '@expo/vector-icons';
 const width = Dimensions.get('window').width / 2 - 30;
 
 const HomeScreen = ({navigation}) => {
@@ -63,7 +64,7 @@ const HomeScreen = ({navigation}) => {
               <Icon
                 name="favorite"
                 size={18}
-                color={items.like ? COLORS.red : COLORS.black}
+                color={items.like ? COLORS.blue : COLORS.black}
               />
             </View>
           </View>
@@ -89,13 +90,13 @@ const HomeScreen = ({navigation}) => {
               marginTop: 5,
             }}>
             <Text style={{fontSize: 19, fontWeight: 'bold'}}>
-              ${items.price}
+              {items.price}
             </Text>
             <View
               style={{
                 height: 25,
                 width: 25,
-                backgroundColor: COLORS.orange,
+                backgroundColor: COLORS.blue,
                 borderRadius: 5,
                 justifyContent: 'center',
                 alignItems: 'center',
@@ -117,25 +118,25 @@ const HomeScreen = ({navigation}) => {
         <View>
           <Text style={{fontSize: 25, fontWeight: 'bold'}}>#OgbeeGotYou<FontAwesome5 name="cart-arrow-down" size={24} color="black" /></Text>
           <Text style={{fontSize: 38, color: COLORS.orange, fontWeight: 'bold'}}>
-            All your needs in one place
+            All your needs in one place <Fontisto name="wink" size={24} color="black" />
           </Text>
         </View>
-        <Ionicons name="notifications-sharp" size={24} color="black" />
+        <Ionicons name="notifications-sharp" size={24} color="black" /> 
         <Ionicons name="help-circle-outline" size={24} color="black" />
       </View>
       <View style={{marginTop: 30, flexDirection: 'row'}}>
         <View style={style.searchContainer}>
           <Icon name="search" size={25} style={{marginLeft: 20}} />
-          <TextInput placeholder="Search" style={style.input} />
+          <TextInput placeholder="What do you need?" style={style.input} />
         </View>
         <View style={style.sortBtn}>
-          <Icon name="sort" size={30} color={COLORS.white} />
+          <Icon name="sort" size={30} color={COLORS.white } />
         </View>
       </View>
       <CategoryList />
       <FlatList
         columnWrapperStyle={{justifyContent: 'space-between'}}
-        showsVerticalScrollIndicator={false}
+        showsVerticalScrollIndicator={true}
         contentContainerStyle={{
           marginTop: 10,
           paddingBottom: 50,
@@ -159,10 +160,10 @@ const style = StyleSheet.create({
   },
   categoryText: {fontSize: 16, color: 'grey', fontWeight: 'bold'},
   categoryTextSelected: {
-    color: COLORS.orange,
+    color: COLORS.blue,
     paddingBottom: 5,
     borderBottomWidth: 2,
-    borderColor: COLORS.orange,
+    borderColor: COLORS.blue,
   },
   card: {
     height: 225,
@@ -197,7 +198,7 @@ const style = StyleSheet.create({
     height: 50,
     width: 50,
     borderRadius: 10,
-    backgroundColor: COLORS.orange,
+    backgroundColor: COLORS.blue,
     justifyContent: 'center',
     alignItems: 'center',
   },
