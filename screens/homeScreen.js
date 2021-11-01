@@ -123,6 +123,7 @@ const HomeScreen = ({navigation}) => {
         </View>
         <Ionicons name="notifications-sharp" size={24} color="black" /> 
         <Ionicons name="help-circle-outline" size={24} color="black" />
+        <FontAwesome5 name="shopping-cart" size={24} color="black" />
       </View>
       <View style={{marginTop: 30, flexDirection: 'row'}}>
         <View style={style.searchContainer}>
@@ -136,7 +137,7 @@ const HomeScreen = ({navigation}) => {
       <CategoryList />
       <FlatList
         columnWrapperStyle={{justifyContent: 'space-between'}}
-        showsVerticalScrollIndicator={true}
+        showsVerticalScrollIndicator={false}
         contentContainerStyle={{
           marginTop: 10,
           paddingBottom: 50,
