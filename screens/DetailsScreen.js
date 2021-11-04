@@ -10,7 +10,7 @@ const DetailsScreen = ({navigation, route}) => {
     <SafeAreaView
       style={{
         flex: 1,
-        backgroundColor: COLORS.white,
+        backgroundColor: COLORS.pink,
       }}>
       <View style={style.header}>
         <Icon name="arrow-back" size={28} onPress={() => navigation.goBack()} />
@@ -44,9 +44,9 @@ const DetailsScreen = ({navigation, route}) => {
                 marginLeft: 15,
                 color: COLORS.white,
                 fontWeight: 'bold',
-                fontSize: 16,
+                fontSize: 15,
               }}>
-              ${items.price}
+              {items.price}
             </Text>
           </View>
         </View>
@@ -91,7 +91,7 @@ const DetailsScreen = ({navigation, route}) => {
             <View style={style.buyBtn}>
               <Text
                 style={{color: COLORS.white, fontSize: 18, fontWeight: 'bold'}}>
-                Buy
+                Purchase
               </Text>
             </View>
           </View>
@@ -143,13 +143,13 @@ const style = StyleSheet.create({
   buyBtn: {
     width: 130,
     height: 50,
-    backgroundColor: COLORS.green,
+    backgroundColor: COLORS.blue,
     justifyContent: 'center',
     alignItems: 'center',
     borderRadius: 30,
   },
   priceTag: {
-    backgroundColor: COLORS.green,
+    backgroundColor: COLORS.blue,
     width: 80,
     height: 40,
     justifyContent: 'center',

@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import {
   View,
   SafeAreaView,
@@ -18,9 +18,9 @@ import { Fontisto } from '@expo/vector-icons';
 const width = Dimensions.get('window').width / 2 - 30;
 
 const HomeScreen = ({navigation}) => {
-  const [catergoryIndex, setCategoryIndex] = React.useState(0);
+  const [catergoryIndex, setCategoryIndex] = useState(0);
 
-  const categories = ['POPULAR', 'TODAYS DEALS', 'CONVENIENT', 'MORE FOR YOUR MONEY'];
+  const categories = ['POPULAR', 'TODAYS DEALS', 'CONVENIENT', 'PROMOTIONS'];
 
   const CategoryList = () => {
     return (
@@ -116,8 +116,8 @@ const HomeScreen = ({navigation}) => {
       style={{flex: 1, paddingHorizontal: 20, backgroundColor: COLORS.white}}>
       <View style={style.header}>
         <View>
-          <Text style={{fontSize: 25, fontWeight: 'bold'}}>#OgbeeGotYou<FontAwesome5 name="cart-arrow-down" size={24} color="black" /></Text>
-          <Text style={{fontSize: 38, color: COLORS.orange, fontWeight: 'bold'}}>
+          <Text style={{fontSize: 25, fontWeight: 'bold'}}>#KraksGotYou<FontAwesome5 name="cart-arrow-down" size={24} color="black" /></Text>
+          <Text style={{fontSize: 38, color: COLORS.blue, fontWeight: 'bold'}}>
             All your needs in one place <Fontisto name="wink" size={24} color="black" />
           </Text>
         </View>
