@@ -6,6 +6,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 const Stack = createStackNavigator();
 import HomeScreen from './screens/homeScreen';
 import DetailsSceeen from './screens/DetailsScreen';
+
 import {StatusBar} from 'react-native';
 import COLORS from './assets/colour';
 
@@ -16,6 +17,7 @@ const App = () => {
       <Stack.Navigator screenOptions={{header: () => null}}>
         <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="Details" component={DetailsSceeen} />
+        
       </Stack.Navigator>
     </NavigationContainer>
   );

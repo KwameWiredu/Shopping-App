@@ -15,6 +15,7 @@ import itemsData from '../assets/itemsData';
 import { FontAwesome5 } from '@expo/vector-icons';
 import { Ionicons } from '@expo/vector-icons';
 import { Fontisto } from '@expo/vector-icons';
+import Footer from "./footer"
 const width = Dimensions.get('window').width / 2 - 30;
 
 const HomeScreen = ({navigation}) => {
@@ -122,7 +123,6 @@ const HomeScreen = ({navigation}) => {
           </Text>
         </View>
         <Ionicons name="notifications-sharp" size={24} color="black" /> 
-        <Ionicons name="help-circle-outline" size={24} color="black" />
         <FontAwesome5 name="shopping-cart" size={24} color="black" />
       </View>
       <View style={{marginTop: 30, flexDirection: 'row'}}>
@@ -148,6 +148,7 @@ const HomeScreen = ({navigation}) => {
           return <Card items={item} />;
         }}
       />
+      <Footer/>
     </SafeAreaView>
   );
 };
