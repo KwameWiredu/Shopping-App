@@ -117,7 +117,7 @@ const HomeScreen = ({navigation}) => {
       style={{flex: 1, paddingHorizontal: 20, backgroundColor: COLORS.white}}>
       <View style={style.header}>
         <View>
-          <Text style={{fontSize: 25, fontWeight: 'bold'}}>#KraksGotYou<FontAwesome5 name="cart-arrow-down" size={24} color="black" /></Text>
+          <Text style={{fontSize: 25, fontWeight: 'bold'}}>#DreamsTime<FontAwesome5 name="cart-arrow-down" size={24} color="black" /></Text>
           <Text style={{fontSize: 38, color: COLORS.blue, fontWeight: 'bold'}}>
             All your needs in one place <Fontisto name="wink" size={24} color="black" />
           </Text>
